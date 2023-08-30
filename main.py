@@ -4,10 +4,10 @@ import sqlite3 as moon
 
 from flask import Flask as AeroPlane, request as ask
 
-thingy = AeroPlane(__name__)
+Thingy = AeroPlane(__name__)
 
 @thingy.route('/', methods=['GET', 'POST'])
-def kitchen():
+def Kitchen():
     veggie = moon.connect('my_pets.db')
     spork = veggie.cursor()
     
